@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="container" style="background-image:url('http://goo.gl/1Nv7HA');">
+
+    <div class="text-center">
+        <img src="https://goo.gl/VzZWDw" height="200" width="600">
+    </div>
+
+    <div class="bg-success row" style="background-color:#006600; margin-top:70px; margin-left:17%; opacity:0.8; border-radius:10px; height:300px; width:65%; color:#FF9900">
+      <div class="col-sm-6">
+        <div class="text-center" style="padding-top:7px">
+          <p>Enter your Github account name: </p>
+          <input type="text" name="text_box" id="text_box" style="margin-top:2px; border-radius:10px; height:20px; width:100px; color:#000000">
+        </div>
+        <div class="col-sm-12" id="avatar_url" style:"padding-top:10px; padding-left:5px"></div>
+        <div class="col-sm-12" id="public_repos"></div>
+        <div class="col-sm-12" id="public_gists"></div>
+        <div class="col-sm-12" id="following"></div>
+        <div class="col-sm-12" id="followers"></div>        
+        <div class="col-sm-12 text-center">
+          <input class="btn-primary" type="submit" name="button" id="perform_submit" value="Submit" style="border-radius:10px; height:35px; width:70px; margin-top:7px">
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="col-sm-12 text-center" style="margin-top:20px; margin-left:5px; font-size:17px"><p class="text-center lead"><u>Feedbacks<u></p></div>
+        <div class="col-sm-12 text-center" id="feed_back_followers" style="margin-top:10px; margin-left:5px"></div>
+        <div class="col-sm-12 text-center" id="feed_back_following" style="margin-top:10px; margin-left:5px"></div>
+        <div class="col-sm-12 text-center" id="feed_back_repos" style="margin-top:10px; margin-left:5px"></div>
+        <div class="col-sm-12 text-center" id="feed_back_gists" style="margin-top:10px; margin-left:5px"></div>
+      </div>      
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="my_js.js"></script>
+
+  </body>
+
+</html>
