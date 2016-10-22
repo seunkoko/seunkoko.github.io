@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="https://goo.gl/E5jk8c"/>
+<title>Owonikoko Oluwaseun</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i> +234 8079216793</li>
+        <li><i class="fa fa-envelope-o"></i> seunowonikoko@gmail.com</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="../index.html"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="https://mail.google.com"><img src="../images/logo/gmail.ico" alt="Google Mail" /></a></li>
+        <li><a href="https://mg.mail.yahoo.com"><img src="../images/logo/yahoomail.ico" alt="Yahoo Mail" /></a></li>     
+        <li><a href="http://www.facebook.com"><img src="../images/logo/facebook.ico" alt="Facebook" /></a></li>
+        <li><a href="https://www.instagram.com"><img src="../images/logo/instagram.ico" alt="Instagram" /></a></li>
+        <li><a href="https://twitter.com/"><img src="../images/logo/twitter.ico" alt="Twitter" /></a></li>
+        <li><a href="https://github.com/"><img src="../images/logo/github.ico" alt="Github" /></a></li>
+        <li><a href="https://medium.com"><img src="../images/logo/mediumm.ico" alt="Medium" /></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo"> 
+      <!-- ################################################################################################ -->
+      <h1><a href="../index.html">OWONIKOKO Oluwaseun S.</a></h1>
+      <p>...aspiring world class developer</p>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="clear"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li class="active"><a class="drop" href="github-accounts.html">Projects</a>
+          <ul>
+            <li><a href="github-accounts.html">Github Account</a></li>
+            <li><a href="binary-search.html">Binary Search</a></li>
+          </ul>
+        </li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a class="drop" href="codecademy.html">Tutorials</a>
+          <ul>
+            <li><a href="codecademy.html">Codecademy</a></li>
+            <!--<li><a href="freecodecamp.html">Free Code Camp</a></li>
+            <li><a href="tutorials-point.html">Tutorials Point</a></li>-->
+            <li><a href="w3-schools.html">W3 Schools</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="stackoverflow.html">Help Sites</a>
+          <ul>
+            <li><a href="stackoverflow.html">Stackoverflow</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> -->
+<div class="bgded overlay" style="background-image:url('../images/background-img/background.jpg');">
+  <div id="binsearch" class="hoc clear">
+    <h2 id="codeca_head">Binary Search</h2> 
+    <p id="codeca_para">The topic may say Binary Search, but this project is really about extending the array object in javascript. Click <a href="https://www.tutorialspoint.com/data_structures_algorithms/binary_search_algorithm.htm">Binary Search</a>, if you want to learn more about this search algorithm. I got this idea from a question i was given to solve:</p>
+    <p id="codeca_para">Question: Implement the binary search algorithm with 3 arrays, populating the arrays as thus;  array_1(1 -20, with intervals of 1), array_2(2 - 40, with intervals of 2), and array_3(10 -1000, with intervals of 10). Where you add a prototype method to the Array Object to generate these arrays</p>
+    <p id="codeca_para">After writing the code, I realized the for-loops I had written to generate arrays I needed as input for my binary search test could be refactored. See below</p>
+    <div id="binsearch_array_div">  
+      <p id="code_comments">/*</p>
+      <p id="code_comments">Array.prototype.gen_arrays(sv, mf);</p>
+
+        <p id="code_comments">Array.prototype.gen_arrays:</p>
+           <p id="code_comments">This is an extension of the array methods in javascript.</p> 
+           <p id="code_comments">It can be used to generate one or more arrays. Emphasis</p> 
+           <p id="code_comments">on more arrays, when these arrays to be generated have</p>
+           <p id="code_comments">their incremental difference (the difference between</p> 
+           <p id="code_comments">consecutive values) as constant and also, the highest value</p>
+           <p id="code_comments">of each array has a common difference.</p>
+           
+           <p id="code_comments">Advantages:</p> 
+             <p id="code_comments">* Code Redability: it makes your code shorter and more readable</p>
+             <p id="code_comments">* Code Refactoring: This on its own has two advantages which are</p> 
+                       <p id="code_comments">Extensibility and Maintainability.</p>
+
+        <p id="code_comments">sv => Starting value of the array. It is also the incremental</p> 
+          <p id="code_comments">difference between the generated array. The difference</p> 
+          <p id="code_comments">between this generated array is constant.</p>
+        <p id="code_comments">mf => Multiplying factor of the array. This is the value when</p> 
+          <p id="code_comments">multiplied with the common difference cd, will give you the</p> 
+          <p id="code_comments">highest value of the generated array.</p>
+        <p id="code_comments">cd => Common difference between the highest value of the arrays</p> 
+          <p id="code_comments">to be generated. The H.C.F. of the highest value of the arrays</p> 
+          <p id="code_comments">to be generated.</p>
+        
+        <p id="code_comments">For example:</p>
+          <p id="code_comments">1. gen_arrays(1 to 20)</p>
+          <p id="code_comments">2. gen_arrays(2 to 40)</p>
+          <p id="code_comments">3. gen_arrays(10 to 1000)</p>
+          
+          <p id="code_comments">cd of (20, 40, 1000) = 20</p>
+          
+          <p id="code_comments">For 1:</p> 
+            <p id="code_comments">sv => 1</p>
+            <p id="code_comments">cd => 20</p>
+            <p id="code_comments">mf => 1</p> 
+            <p id="code_comments">Therefore: the highest value of the array (20) === cd*mf (20)</p>  
+            
+          <p id="code_comments">For 2:</p> 
+            <p id="code_comments">sv => 2</p>
+            <p id="code_comments">cd => 20</p>
+            <p id="code_comments">mf => 2</p> 
+            <p id="code_comments">Therefore: the highest value of the array (40) === cd*mf (40)</p>
+            
+          <p id="code_comments">For 3:</p> 
+            <p id="code_comments">sv => 10</p>
+            <p id="code_comments">cd => 20</p>
+            <p id="code_comments">mf => 50</p> 
+            <p id="code_comments">Therefore: the highest value of the array (20) === cd*mf</p> 
+            
+          <p id="code_comments">Note: The common difference (cd) is constant</p>
+          
+          <p id="code_comments">The For Loop:</p>
+            <p id="code_comments">var demo_arr = [];</p>
+            <p id="code_comments">for(i=0; i<(mf * cd); i+=sv){</p>
+              <p id="code_comments">demo_arr.push(i + sv);</p>
+            <p id="code_comments">}</p>
+      <p id="code_comments">*/</p>
+
+      <p id="code_comments">//Where arrays to generate are [1 - 20], [2 - 40], [10 -1000], which makes cd = 20</p>
+      <p id="code_comments">//Code</p>
+
+      <p id="main_code">Array.prototype.gen_arrays = function(sv, mf){</p>
+        <p id="main_code">for(i=0; i<mf*20; i+=sv){</p>
+          <p id="main_code">this.push(" " + (i + sv));</p>
+        <p id="main_code">}</p>
+      <p id="main_code">}</p>
+
+      <p id="main_code">var one_to_twenty = [];</p>
+      <p id="main_code">var two_to_forty = [];</p>
+      <p id="main_code">var ten_to_thousand = [];</p>
+
+      <p id="main_code">one_to_twenty.gen_arrays(1, 1);</p>
+      <p id="main_code">two_to_forty.gen_arrays(2, 2);</p>
+      <p id="main_code">ten_to_thousand.gen_arrays(10, 50);</p>
+
+      <p id="code_comments">//logs out generated arrays</p>
+      <p id="main_code">console.log("----Generated Arrays----")</p>
+      <p id="main_code">console.log("1-20: [" + one_to_twenty + " ]");</p>
+      <p id="main_code">console.log("2-40: [" + two_to_forty + " ]");</p>
+      <p id="main_code">console.log("10-1000: [" + ten_to_thousand + " ]");</p>
+
+      <p id="code_comments">//logs out the length of generated arrays</p>
+      <p id="main_code">console.log("");</p>
+      <p id="main_code">console.log("----Length of generated arrays----");</p>
+      <p id="main_code">console.log("length of 1-20, multiples of 1: " + one_to_twenty.length);</p>
+      <p id="main_code">console.log("length of 2-40, multiples of 2: " + two_to_forty.length);</p>
+      <p id="main_code">console.log("length of 10-1000, multiples of 10: " + ten_to_thousand.length);</p>
+
+      <p id="code_comments">/*</p>
+      <p id="code_comments">Please feel free to contribute</p>
+        <p id="code_comments">Mail me: seunowonikoko@gmail.com</p> 
+      <p id="code_comments">*/</p>
+    </div>
+  </div>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">seunkoko</a></p>
+    <p class="fl_right"></a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>

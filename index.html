@@ -1,52 +1,171 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Github Account</title>
-    <link rel="shortcut icon" href="images/git_img.png"/>
-    <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="bootstrap-3.3.5/dist/css/bootstrap.min.css"> -->
-    <!-- <link type="text/css" rel="stylesheet" href="my_css.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
+<head>
+<link rel="shortcut icon" href="https://goo.gl/E5jk8c"/>
+<title>Owonikoko Oluwaseun</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
 
-  <body class="container" style="background-image:url('http://goo.gl/1Nv7HA');">
-
-    <div class="text-center">
-        <img src="https://goo.gl/VzZWDw" height="200" width="600">
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i> +234 8079216793</li>
+        <li><i class="fa fa-envelope-o"></i> seunowonikoko@gmail.com</li>
+      </ul>
     </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="https://mail.google.com"><img src="images/logo/gmail.ico" alt="Google Mail" /></a></li>
+        <li><a href="https://mg.mail.yahoo.com"><img src="images/logo/yahoomail.ico" alt="Yahoo Mail" /></a></li>     
+        <li><a href="http://www.facebook.com"><img src="images/logo/facebook.ico" alt="Facebook" /></a></li>
+        <li><a href="https://www.instagram.com"><img src="images/logo/instagram.ico" alt="Instagram" /></a></li>
+        <li><a href="https://twitter.com/"><img src="images/logo/twitter.ico" alt="Twitter" /></a></li>
+        <li><a href="https://github.com/"><img src="images/logo/github.ico" alt="Github" /></a></li>
+        <li><a href="https://medium.com"><img src="images/logo/mediumm.ico" alt="Medium" /></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
 
-    <div class="bg-success row" style="background-color:#006600; margin-top:70px; margin-left:17%; opacity:0.8; border-radius:10px; height:300px; width:65%; color:#FF9900">
-      <div class="col-sm-6">
-        <div class="text-center" style="padding-top:7px">
-          <p>Enter your Github account name: </p>
-          <input type="text" name="text_box" id="text_box" style="margin-top:2px; border-radius:10px; height:20px; width:100px; color:#000000">
-        </div>
-        <div class="col-sm-12" id="avatar_url" style:"padding-top:10px; padding-left:5px"></div>
-        <div class="col-sm-12" id="public_repos"></div>
-        <div class="col-sm-12" id="public_gists"></div>
-        <div class="col-sm-12" id="following"></div>
-        <div class="col-sm-12" id="followers"></div>        
-        <div class="col-sm-12 text-center">
-          <input class="btn-primary" type="submit" name="button" id="perform_submit" value="Submit" style="border-radius:10px; height:35px; width:70px; margin-top:7px">
-        </div>
-      </div>
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo"> 
+      <!-- ################################################################################################ -->
+      <h1><a href="index.html">OWONIKOKO Oluwaseun S.</a></h1>
+      <p>...aspiring world class developer</p>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="clear"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="pages/about-me.html">About Me</a></li>
+        <li><a class="drop" href="pages/github-accounts.html">Projects</a>
+          <ul>
+            <li><a href="pages/github-accounts.html">Github Account</a></li>
+            <li><a href="pages/binary-search.html">Binary Search</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/accounts.html">Accounts</a></li>
+        <li><a class="drop" href="pages/codecademy.html">Tutorials</a>
+          <ul>
+            <li><a href="pages/codecademy.html">Codecademy</a></li>
+            <!--<li><a href="freecodecamp.html">Free Code Camp</a></li>
+            <li><a href="tutorials-point.html">Tutorials Point</a></li>-->
+            <li><a href="pages/w3-schools.html">W3 Schools</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="pages/stackoverflow.html">Help Sites</a>
+          <ul>
+            <li><a href="pages/stackoverflow.html">Stackoverflow</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
 
-      <div class="col-sm-6">
-        <div class="col-sm-12 text-center" style="margin-top:20px; margin-left:5px; font-size:17px"><p class="text-center lead"><u>Feedbacks<u></p></div>
-        <div class="col-sm-12 text-center" id="feed_back_followers" style="margin-top:10px; margin-left:5px"></div>
-        <div class="col-sm-12 text-center" id="feed_back_following" style="margin-top:10px; margin-left:5px"></div>
-        <div class="col-sm-12 text-center" id="feed_back_repos" style="margin-top:10px; margin-left:5px"></div>
-        <div class="col-sm-12 text-center" id="feed_back_gists" style="margin-top:10px; margin-left:5px"></div>
-      </div>      
-    </div> 
+<!-- ################################################################################################ -->
+<!-- <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> -->
+<div class="bgded overlay" style="background-image:url('images/background-img/background.jpg');">
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="flexslider basicslider" id="home_height">
+      <ul class="slides">
+        <li>
+          <article>
+            <p>wanna know more about <em>seun</em>, her dreams and aspirations?...</p>
+            <h3 class="heading">ABOUT ME</h3>
+            <p>Educational background, work experience, programming languages known and my aspirations</p>
+            <footer>
+              <ul class="nospace inline pushright">
+                <li><a class="btn" href="pages/about-me.html">VIEW</a></li>
+              </ul>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>checkout the little projects i have worked on</p>
+            <h3 class="heading">PROJECTS</h3>
+            <p>Github Accounts and Binary Search</p>
+            <footer>
+              <ul class="nospace inline pushright">
+                <li><a class="btn" href="pages/github-accounts.html">Github Accounts</a></li>
+                <li><a class="btn" href="pages/binary-search.html">Binary Search</a></li>
+              </ul>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>let's get social</p>
+            <h3 class="heading">ACCOUNTS</h3>
+            <p>Facebook, Instagram, Github, Twitter, Medium</p>
+            <footer>
+              <ul class="nospace inline pushright">
+                <li><a class="btn" href="pages/accounts.html">VIEW</a></li>
+              </ul>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>You can join me on this quest by signing up to one of these sites</p>
+            <h3 class="heading">TUTORIALS</h3>
+            <p>Codecademy, W3 schools and many others</p>
+            <footer>
+              <ul class="nospace inline pushright">
+                <li><a class="btn" href="pages/codecademy.html">Codecademy</a></li>
+                <li><a class="btn" href="pages/w3-schools.html">W3 Schools</a></li>
+              </ul>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>These are the best sites that help you when you're stuck</p>
+            <h3 class="heading">HELP SITES</h3>
+            <p>Stackoverflow</p>
+            <footer>
+              <ul class="nospace inline pushright">
+                <li><a class="btn" href="pages/stackoverflow.html">Stackoverflow</a></li>
+              </ul>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="my_js.js"></script>
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">seunkoko</a></p>
+    <p class="fl_right"></a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
 
-  </body>
-
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
 </html>
